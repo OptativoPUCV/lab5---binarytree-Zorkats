@@ -78,11 +78,10 @@ void insertTreeMap(TreeMap * tree, void* key, void * value) {
     }else {
       actualNode ->pair->value = value;
       free(newNode);
-      free(actualNode);
       tree->current = actualNode;
       break;
     }
-  
+  }
 }
 
 TreeNode * minimum(TreeNode * x){
@@ -92,7 +91,7 @@ TreeNode * minimum(TreeNode * x){
 
 
 void removeNode(TreeMap * tree, TreeNode* node) {
-
+|
 }
 
 void eraseTreeMap(TreeMap * tree, void* key){
