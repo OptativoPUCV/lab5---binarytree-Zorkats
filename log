@@ -249,3 +249,14 @@ Sat 22 Apr 2023 11:50:27 PM UTC:
  tests:  26|1
 total_score: 60/70
 7a922e0
+Sat 22 Apr 2023 11:57:28 PM UTC: 
+ treemap.c | 9 ++++++++-
+ 1 file changed, 8 insertions(+), 1 deletion(-)
+In file included from test.c:4:
+treemap.c: In function ‘nextTreeMap’:
+treemap.c:178:22: error: initialization of ‘TreeNode *’ from incompatible pointer type ‘Pair *’ [-Werror=incompatible-pointer-types]
+  178 |   TreeNode *parent = tree->current->pair;
+      |                      ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+4623b49
